@@ -6,10 +6,10 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 add_executable(modulo main.cpp
-        utils/writeFile.cpp
-        utils/writeFile.h
-        utils/readFile.cpp
-        utils/readFile.h
-        utils/createFile.cpp
-        utils/createFile.h
+        utils/create/createFile.cpp
+        utils/create/createFile.h
+        utils/read/readFile.cpp
+        utils/read/readFile.h
+        utils/write/writeFile.cpp
+        utils/write/writeFile.h
 )

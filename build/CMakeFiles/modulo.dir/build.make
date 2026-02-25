@@ -86,62 +86,62 @@ CMakeFiles/modulo.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/modulo.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chrollos/Documents/projects/modulo/main.cpp -o CMakeFiles/modulo.dir/main.cpp.s
 
-CMakeFiles/modulo.dir/utils/writeFile.cpp.o: CMakeFiles/modulo.dir/flags.make
-CMakeFiles/modulo.dir/utils/writeFile.cpp.o: /Users/chrollos/Documents/projects/modulo/utils/writeFile.cpp
-CMakeFiles/modulo.dir/utils/writeFile.cpp.o: CMakeFiles/modulo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chrollos/Documents/projects/modulo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/modulo.dir/utils/writeFile.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/modulo.dir/utils/writeFile.cpp.o -MF CMakeFiles/modulo.dir/utils/writeFile.cpp.o.d -o CMakeFiles/modulo.dir/utils/writeFile.cpp.o -c /Users/chrollos/Documents/projects/modulo/utils/writeFile.cpp
+CMakeFiles/modulo.dir/utils/create/createFile.cpp.o: CMakeFiles/modulo.dir/flags.make
+CMakeFiles/modulo.dir/utils/create/createFile.cpp.o: /Users/chrollos/Documents/projects/modulo/utils/create/createFile.cpp
+CMakeFiles/modulo.dir/utils/create/createFile.cpp.o: CMakeFiles/modulo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chrollos/Documents/projects/modulo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/modulo.dir/utils/create/createFile.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/modulo.dir/utils/create/createFile.cpp.o -MF CMakeFiles/modulo.dir/utils/create/createFile.cpp.o.d -o CMakeFiles/modulo.dir/utils/create/createFile.cpp.o -c /Users/chrollos/Documents/projects/modulo/utils/create/createFile.cpp
 
-CMakeFiles/modulo.dir/utils/writeFile.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/modulo.dir/utils/writeFile.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chrollos/Documents/projects/modulo/utils/writeFile.cpp > CMakeFiles/modulo.dir/utils/writeFile.cpp.i
+CMakeFiles/modulo.dir/utils/create/createFile.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/modulo.dir/utils/create/createFile.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chrollos/Documents/projects/modulo/utils/create/createFile.cpp > CMakeFiles/modulo.dir/utils/create/createFile.cpp.i
 
-CMakeFiles/modulo.dir/utils/writeFile.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/modulo.dir/utils/writeFile.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chrollos/Documents/projects/modulo/utils/writeFile.cpp -o CMakeFiles/modulo.dir/utils/writeFile.cpp.s
+CMakeFiles/modulo.dir/utils/create/createFile.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/modulo.dir/utils/create/createFile.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chrollos/Documents/projects/modulo/utils/create/createFile.cpp -o CMakeFiles/modulo.dir/utils/create/createFile.cpp.s
 
-CMakeFiles/modulo.dir/utils/readFile.cpp.o: CMakeFiles/modulo.dir/flags.make
-CMakeFiles/modulo.dir/utils/readFile.cpp.o: /Users/chrollos/Documents/projects/modulo/utils/readFile.cpp
-CMakeFiles/modulo.dir/utils/readFile.cpp.o: CMakeFiles/modulo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chrollos/Documents/projects/modulo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/modulo.dir/utils/readFile.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/modulo.dir/utils/readFile.cpp.o -MF CMakeFiles/modulo.dir/utils/readFile.cpp.o.d -o CMakeFiles/modulo.dir/utils/readFile.cpp.o -c /Users/chrollos/Documents/projects/modulo/utils/readFile.cpp
+CMakeFiles/modulo.dir/utils/read/readFile.cpp.o: CMakeFiles/modulo.dir/flags.make
+CMakeFiles/modulo.dir/utils/read/readFile.cpp.o: /Users/chrollos/Documents/projects/modulo/utils/read/readFile.cpp
+CMakeFiles/modulo.dir/utils/read/readFile.cpp.o: CMakeFiles/modulo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chrollos/Documents/projects/modulo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/modulo.dir/utils/read/readFile.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/modulo.dir/utils/read/readFile.cpp.o -MF CMakeFiles/modulo.dir/utils/read/readFile.cpp.o.d -o CMakeFiles/modulo.dir/utils/read/readFile.cpp.o -c /Users/chrollos/Documents/projects/modulo/utils/read/readFile.cpp
 
-CMakeFiles/modulo.dir/utils/readFile.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/modulo.dir/utils/readFile.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chrollos/Documents/projects/modulo/utils/readFile.cpp > CMakeFiles/modulo.dir/utils/readFile.cpp.i
+CMakeFiles/modulo.dir/utils/read/readFile.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/modulo.dir/utils/read/readFile.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chrollos/Documents/projects/modulo/utils/read/readFile.cpp > CMakeFiles/modulo.dir/utils/read/readFile.cpp.i
 
-CMakeFiles/modulo.dir/utils/readFile.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/modulo.dir/utils/readFile.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chrollos/Documents/projects/modulo/utils/readFile.cpp -o CMakeFiles/modulo.dir/utils/readFile.cpp.s
+CMakeFiles/modulo.dir/utils/read/readFile.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/modulo.dir/utils/read/readFile.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chrollos/Documents/projects/modulo/utils/read/readFile.cpp -o CMakeFiles/modulo.dir/utils/read/readFile.cpp.s
 
-CMakeFiles/modulo.dir/utils/createFile.cpp.o: CMakeFiles/modulo.dir/flags.make
-CMakeFiles/modulo.dir/utils/createFile.cpp.o: /Users/chrollos/Documents/projects/modulo/utils/createFile.cpp
-CMakeFiles/modulo.dir/utils/createFile.cpp.o: CMakeFiles/modulo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chrollos/Documents/projects/modulo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/modulo.dir/utils/createFile.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/modulo.dir/utils/createFile.cpp.o -MF CMakeFiles/modulo.dir/utils/createFile.cpp.o.d -o CMakeFiles/modulo.dir/utils/createFile.cpp.o -c /Users/chrollos/Documents/projects/modulo/utils/createFile.cpp
+CMakeFiles/modulo.dir/utils/write/writeFile.cpp.o: CMakeFiles/modulo.dir/flags.make
+CMakeFiles/modulo.dir/utils/write/writeFile.cpp.o: /Users/chrollos/Documents/projects/modulo/utils/write/writeFile.cpp
+CMakeFiles/modulo.dir/utils/write/writeFile.cpp.o: CMakeFiles/modulo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chrollos/Documents/projects/modulo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/modulo.dir/utils/write/writeFile.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/modulo.dir/utils/write/writeFile.cpp.o -MF CMakeFiles/modulo.dir/utils/write/writeFile.cpp.o.d -o CMakeFiles/modulo.dir/utils/write/writeFile.cpp.o -c /Users/chrollos/Documents/projects/modulo/utils/write/writeFile.cpp
 
-CMakeFiles/modulo.dir/utils/createFile.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/modulo.dir/utils/createFile.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chrollos/Documents/projects/modulo/utils/createFile.cpp > CMakeFiles/modulo.dir/utils/createFile.cpp.i
+CMakeFiles/modulo.dir/utils/write/writeFile.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/modulo.dir/utils/write/writeFile.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chrollos/Documents/projects/modulo/utils/write/writeFile.cpp > CMakeFiles/modulo.dir/utils/write/writeFile.cpp.i
 
-CMakeFiles/modulo.dir/utils/createFile.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/modulo.dir/utils/createFile.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chrollos/Documents/projects/modulo/utils/createFile.cpp -o CMakeFiles/modulo.dir/utils/createFile.cpp.s
+CMakeFiles/modulo.dir/utils/write/writeFile.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/modulo.dir/utils/write/writeFile.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chrollos/Documents/projects/modulo/utils/write/writeFile.cpp -o CMakeFiles/modulo.dir/utils/write/writeFile.cpp.s
 
 # Object files for target modulo
 modulo_OBJECTS = \
 "CMakeFiles/modulo.dir/main.cpp.o" \
-"CMakeFiles/modulo.dir/utils/writeFile.cpp.o" \
-"CMakeFiles/modulo.dir/utils/readFile.cpp.o" \
-"CMakeFiles/modulo.dir/utils/createFile.cpp.o"
+"CMakeFiles/modulo.dir/utils/create/createFile.cpp.o" \
+"CMakeFiles/modulo.dir/utils/read/readFile.cpp.o" \
+"CMakeFiles/modulo.dir/utils/write/writeFile.cpp.o"
 
 # External object files for target modulo
 modulo_EXTERNAL_OBJECTS =
 
 modulo: CMakeFiles/modulo.dir/main.cpp.o
-modulo: CMakeFiles/modulo.dir/utils/writeFile.cpp.o
-modulo: CMakeFiles/modulo.dir/utils/readFile.cpp.o
-modulo: CMakeFiles/modulo.dir/utils/createFile.cpp.o
+modulo: CMakeFiles/modulo.dir/utils/create/createFile.cpp.o
+modulo: CMakeFiles/modulo.dir/utils/read/readFile.cpp.o
+modulo: CMakeFiles/modulo.dir/utils/write/writeFile.cpp.o
 modulo: CMakeFiles/modulo.dir/build.make
 modulo: CMakeFiles/modulo.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/chrollos/Documents/projects/modulo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable modulo"

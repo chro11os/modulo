@@ -1,6 +1,6 @@
-#include "utils/createFile.h"
-#include "utils/readFile.h"
-#include "utils/writeFile.h"
+#include "utils/create/createFile.h"
+#include "utils/read/readFile.h"
+#include "utils/write/writeFile.h"
 #include <iostream>
 #include <string>
 

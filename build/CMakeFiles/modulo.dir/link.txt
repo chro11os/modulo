@@ -1,1 +1,1 @@
-/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/modulo.dir/main.cpp.o CMakeFiles/modulo.dir/utils/writeFile.cpp.o CMakeFiles/modulo.dir/utils/readFile.cpp.o CMakeFiles/modulo.dir/utils/createFile.cpp.o -o modulo
+/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/modulo.dir/main.cpp.o CMakeFiles/modulo.dir/utils/create/createFile.cpp.o CMakeFiles/modulo.dir/utils/read/readFile.cpp.o CMakeFiles/modulo.dir/utils/write/writeFile.cpp.o -o modulo

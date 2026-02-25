@@ -160,77 +160,77 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/modulo.dir/build.make CMakeFiles/modulo.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-utils/createFile.o: utils/createFile.cpp.o
-.PHONY : utils/createFile.o
+utils/create/createFile.o: utils/create/createFile.cpp.o
+.PHONY : utils/create/createFile.o
 
 # target to build an object file
-utils/createFile.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/modulo.dir/build.make CMakeFiles/modulo.dir/utils/createFile.cpp.o
-.PHONY : utils/createFile.cpp.o
+utils/create/createFile.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/modulo.dir/build.make CMakeFiles/modulo.dir/utils/create/createFile.cpp.o
+.PHONY : utils/create/createFile.cpp.o
 
-utils/createFile.i: utils/createFile.cpp.i
-.PHONY : utils/createFile.i
+utils/create/createFile.i: utils/create/createFile.cpp.i
+.PHONY : utils/create/createFile.i
 
 # target to preprocess a source file
-utils/createFile.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/modulo.dir/build.make CMakeFiles/modulo.dir/utils/createFile.cpp.i
-.PHONY : utils/createFile.cpp.i
+utils/create/createFile.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/modulo.dir/build.make CMakeFiles/modulo.dir/utils/create/createFile.cpp.i
+.PHONY : utils/create/createFile.cpp.i
 
-utils/createFile.s: utils/createFile.cpp.s
-.PHONY : utils/createFile.s
+utils/create/createFile.s: utils/create/createFile.cpp.s
+.PHONY : utils/create/createFile.s
 
 # target to generate assembly for a file
-utils/createFile.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/modulo.dir/build.make CMakeFiles/modulo.dir/utils/createFile.cpp.s
-.PHONY : utils/createFile.cpp.s
+utils/create/createFile.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/modulo.dir/build.make CMakeFiles/modulo.dir/utils/create/createFile.cpp.s
+.PHONY : utils/create/createFile.cpp.s
 
-utils/readFile.o: utils/readFile.cpp.o
-.PHONY : utils/readFile.o
+utils/read/readFile.o: utils/read/readFile.cpp.o
+.PHONY : utils/read/readFile.o
 
 # target to build an object file
-utils/readFile.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/modulo.dir/build.make CMakeFiles/modulo.dir/utils/readFile.cpp.o
-.PHONY : utils/readFile.cpp.o
+utils/read/readFile.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/modulo.dir/build.make CMakeFiles/modulo.dir/utils/read/readFile.cpp.o
+.PHONY : utils/read/readFile.cpp.o
 
-utils/readFile.i: utils/readFile.cpp.i
-.PHONY : utils/readFile.i
+utils/read/readFile.i: utils/read/readFile.cpp.i
+.PHONY : utils/read/readFile.i
 
 # target to preprocess a source file
-utils/readFile.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/modulo.dir/build.make CMakeFiles/modulo.dir/utils/readFile.cpp.i
-.PHONY : utils/readFile.cpp.i
+utils/read/readFile.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/modulo.dir/build.make CMakeFiles/modulo.dir/utils/read/readFile.cpp.i
+.PHONY : utils/read/readFile.cpp.i
 
-utils/readFile.s: utils/readFile.cpp.s
-.PHONY : utils/readFile.s
+utils/read/readFile.s: utils/read/readFile.cpp.s
+.PHONY : utils/read/readFile.s
 
 # target to generate assembly for a file
-utils/readFile.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/modulo.dir/build.make CMakeFiles/modulo.dir/utils/readFile.cpp.s
-.PHONY : utils/readFile.cpp.s
+utils/read/readFile.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/modulo.dir/build.make CMakeFiles/modulo.dir/utils/read/readFile.cpp.s
+.PHONY : utils/read/readFile.cpp.s
 
-utils/writeFile.o: utils/writeFile.cpp.o
-.PHONY : utils/writeFile.o
+utils/write/writeFile.o: utils/write/writeFile.cpp.o
+.PHONY : utils/write/writeFile.o
 
 # target to build an object file
-utils/writeFile.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/modulo.dir/build.make CMakeFiles/modulo.dir/utils/writeFile.cpp.o
-.PHONY : utils/writeFile.cpp.o
+utils/write/writeFile.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/modulo.dir/build.make CMakeFiles/modulo.dir/utils/write/writeFile.cpp.o
+.PHONY : utils/write/writeFile.cpp.o
 
-utils/writeFile.i: utils/writeFile.cpp.i
-.PHONY : utils/writeFile.i
+utils/write/writeFile.i: utils/write/writeFile.cpp.i
+.PHONY : utils/write/writeFile.i
 
 # target to preprocess a source file
-utils/writeFile.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/modulo.dir/build.make CMakeFiles/modulo.dir/utils/writeFile.cpp.i
-.PHONY : utils/writeFile.cpp.i
+utils/write/writeFile.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/modulo.dir/build.make CMakeFiles/modulo.dir/utils/write/writeFile.cpp.i
+.PHONY : utils/write/writeFile.cpp.i
 
-utils/writeFile.s: utils/writeFile.cpp.s
-.PHONY : utils/writeFile.s
+utils/write/writeFile.s: utils/write/writeFile.cpp.s
+.PHONY : utils/write/writeFile.s
 
 # target to generate assembly for a file
-utils/writeFile.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/modulo.dir/build.make CMakeFiles/modulo.dir/utils/writeFile.cpp.s
-.PHONY : utils/writeFile.cpp.s
+utils/write/writeFile.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/modulo.dir/build.make CMakeFiles/modulo.dir/utils/write/writeFile.cpp.s
+.PHONY : utils/write/writeFile.cpp.s
 
 # Help Target
 help:
@@ -245,15 +245,15 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... utils/createFile.o"
-	@echo "... utils/createFile.i"
-	@echo "... utils/createFile.s"
-	@echo "... utils/readFile.o"
-	@echo "... utils/readFile.i"
-	@echo "... utils/readFile.s"
-	@echo "... utils/writeFile.o"
-	@echo "... utils/writeFile.i"
-	@echo "... utils/writeFile.s"
+	@echo "... utils/create/createFile.o"
+	@echo "... utils/create/createFile.i"
+	@echo "... utils/create/createFile.s"
+	@echo "... utils/read/readFile.o"
+	@echo "... utils/read/readFile.i"
+	@echo "... utils/read/readFile.s"
+	@echo "... utils/write/writeFile.o"
+	@echo "... utils/write/writeFile.i"
+	@echo "... utils/write/writeFile.s"
 .PHONY : help
 
 

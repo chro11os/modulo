@@ -1,3 +1,0 @@
-/Users/chrollos/Documents/projects/modulo/build/CMakeFiles/modulo.dir
-/Users/chrollos/Documents/projects/modulo/build/CMakeFiles/edit_cache.dir
-/Users/chrollos/Documents/projects/modulo/build/CMakeFiles/rebuild_cache.dir

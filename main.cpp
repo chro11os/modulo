@@ -1,19 +1,6 @@
-#include "utils/create/createFile.h"
-#include "utils/read/readFile.h"
-#include "utils/write/writeFile.h"
-#include <iostream>
-#include <string>
+#include "ui/terminal_ui.h"
 
 int main() {
-  std::string activeFile = createFile();
-
-  if (!activeFile.empty()) {
-    writeFile(activeFile);
-    readFile(activeFile);
-  } else {
-    std::cerr << "Exiting: File creation was unsuccessful." << std::endl;
-    return 1;
-  }
-
+  runTerminalUI();
   return 0;
 }

@@ -28,9 +28,9 @@ void runTerminalUI() {
   std::string selected_file = "N/A";
   std::string selected_drive = "/dev/sdb1 (KINGSTON_16GB)";
 
-  // Terminal retro colors
-  auto color_green = Color::RGB(51, 255, 51);
-  auto color_dim_green = Color::RGB(20, 100, 20);
+  // Flat Black and White colors
+  auto color_primary = Color::White;
+  auto color_dim = Color::GrayDark;
   auto color_bg = Color::Black;
 
   // Actions
@@ -98,18 +98,17 @@ void runTerminalUI() {
     }).detach();
   };
 
-  // Components
+  // Components - Using Simple styling for flat look
   auto btn_create =
-      Button(" [1] CREATE IMAGE     ", on_create, ButtonOption::Simple());
-  auto btn_read =
-      Button(" [2] VERIFY IMAGE     ", on_read, ButtonOption::Simple());
+      Button(" CREATE IMAGE     ", on_create, ButtonOption::Simple());
+  auto btn_read = Button(" VERIFY IMAGE     ", on_read, ButtonOption::Simple());
   auto btn_write =
-      Button(" [3] PREPARE IMAGE    ", on_write, ButtonOption::Simple());
+      Button(" PREPARE IMAGE    ", on_write, ButtonOption::Simple());
   auto btn_read_drive =
-      Button(" [4] SCAN TARGET      ", on_read_drive, ButtonOption::Simple());
+      Button(" SCAN TARGET      ", on_read_drive, ButtonOption::Simple());
   auto btn_flash =
-      Button(" [!] START FLASHING   ", on_flash, ButtonOption::Simple());
-  auto btn_quit = Button(" [Q] SHUTDOWN SYSTEM  ", screen.ExitLoopClosure(),
+      Button(" START FLASHING   ", on_flash, ButtonOption::Simple());
+  auto btn_quit = Button(" SHUTDOWN SYSTEM  ", screen.ExitLoopClosure(),
                          ButtonOption::Simple());
 
   auto layout = Container::Vertical({
@@ -122,55 +121,35 @@ void runTerminalUI() {
   });
 
   auto component = Renderer(layout, [&] {
-    auto header =
-        vbox({
-            text(" ███╗   ███╗ ██████╗ ██████╗ ██╗   ██╗██╗      ██████╗ ") |
-                color(color_green),
-            text(" ████╗ ████║██╔═══██╗██╔══██╗██║   ██║██║     ██╔═══██╗") |
-                color(color_green),
-            text(" ██╔████╔██║██║   ██║██║  ██║██║   ██║██║     ██║   ██║") |
-                color(color_green),
-            text(" ██║╚██╔╝██║██║   ██║██║  ██║██║   ██║██║     ██║   ██║") |
-                color(color_green),
-            text(" ██║ ╚═╝ ██║╚██████╔╝██████╔╝╚██████╔╝███████╗╚██████╔╝") |
-                color(color_green),
-            text(" ╚═╝     ╚═╝ ╚═════╝ ╚═════╝  ╚═════╝ ╚══════╝ ╚═════╝ ") |
-                color(color_green),
-        }) |
-        center;
+    auto header = vbox({
+        text(" MODULO USB FLASHER ") | bold | center,
+        text(" v1.0.4 - FLAT EDITION ") | center | dim,
+    });
 
     auto status_indicator = hbox({
-        text(" SYSTEM STATUS: ") | bold,
-        text(flashing ? " [ BUSY ] " : " [ READY ] ") |
-            bgcolor(flashing ? Color::Red : color_green) | color(Color::Black),
+        text(" STATUS: ") | bold,
+        text(flashing ? " BUSY " : " READY ") | inverted,
         filler(),
-        text(" FLASH STATUS: ") | bold,
-        text(" " + flash_status + " ") |
-            color(flash_status == "SUCCESS"
-                      ? color_green
-                      : (flash_status == "FLASHING" ? Color::Yellow
-                                                    : Color::White)),
+        text(" FLASH: ") | bold,
+        text(flash_status) | (flash_status == "SUCCESS" ? bold : dim),
     });
 
     auto main_content = hbox({
         vbox({
-            text(" COMMAND CONSOLE ") | bold | center,
+            text(" COMMANDS ") | bold,
             separator(),
             layout->Render() | flex,
         }) | border |
-            size(WIDTH, GREATER_THAN, 30),
+            size(WIDTH, GREATER_THAN, 25),
 
         vbox({
-            text(" DEVICE INFORMATION ") | bold | center,
+            text(" DEVICE INFO ") | bold,
             separator(),
             vbox({
-                hbox({text(" ACTIVE IMAGE: ") | color(color_green),
-                      text(selected_file)}),
-                hbox({text(" TARGET DRIVE: ") | color(color_green),
-                      text(selected_drive)}),
+                hbox({text(" IMAGE: ") | bold, text(selected_file)}),
+                hbox({text(" DRIVE: ") | bold, text(selected_drive)}),
                 filler(),
-                text(" FLASH PROGRESS ") | bold,
-                gauge(flash_progress) | color(color_green),
+                gauge(flash_progress),
                 hbox({text(std::to_string((int)(flash_progress * 100)) + "%") |
                       center}) |
                     flex,
@@ -180,23 +159,20 @@ void runTerminalUI() {
     });
 
     auto log_view = vbox({
-                        text(" KERNEL LOG ") | color(color_dim_green) | bold,
-                        separatorLight() | color(color_dim_green),
-                        text("> " + log_message) | color(color_green),
+                        text(" LOG ") | bold,
+                        separator(),
+                        text("> " + log_message),
                     }) |
-                    borderStyled(BorderStyle::ROUNDED) |
-                    color(color_dim_green) | size(HEIGHT, EQUAL, 5);
+                    border | size(HEIGHT, EQUAL, 5);
 
     return vbox({
                header,
-               text(" --- TERMINAL USB FLASHING UTILITY v1.0.4 --- ") | center |
-                   color(color_dim_green),
-               separatorDouble() | color(color_green),
+               separator(),
                status_indicator,
                main_content | flex,
                log_view,
            }) |
-           borderDouble | bgcolor(color_bg) | color(color_green);
+           border | bgcolor(color_bg) | color(color_primary);
   });
 
   screen.Loop(component);

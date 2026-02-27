@@ -2,5 +2,5 @@
 #define DATALOADER_CREATEFILE_H
 #include <string>
 
-std::string createFile();
+std::string createFile(std::string fileName);
 #endif
